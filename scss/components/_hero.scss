@@ -1,5 +1,4 @@
 .hero {
-    height: calc(100vh - 132px);
     padding-top: 32px;
     background: $background-color;
     // Hero left
@@ -39,6 +38,7 @@
         }
 
         &__desc {
+            @extend %section-desc;
             max-width: 370px;
             margin-top: 20px;
         }
