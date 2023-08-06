@@ -16,7 +16,6 @@
     &-inner {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     .wrapper-logo {
@@ -30,6 +29,11 @@
             font-weight: 500;
             text-decoration: underline;
         }
+    }
+
+    .logo__icon {
+        margin-left: 357px;
+        margin-right: 223px;
     }
 
     .nav__list {

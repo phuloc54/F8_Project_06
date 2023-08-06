@@ -6,7 +6,6 @@
     &-inner {
         position: relative;
         display: flex;
-        align-items: center;
         gap: 156px;
     }
 
@@ -30,6 +29,7 @@
 
     // Hero right
     &__content {
+        margin-top: 137px;
         &__heading {
             color: #080415;
             font-size: 8rem;
