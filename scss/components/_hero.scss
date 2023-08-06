@@ -1,0 +1,99 @@
+.hero {
+    height: calc(100vh - 132px);
+    padding-top: 32px;
+    background: $background-color;
+    // Hero left
+    &-inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 156px;
+    }
+
+    &__media {
+        position: relative;
+        flex-shrink: 0;
+
+        &::after {
+            content: url(../../assets/img/bgc-hero.svg);
+            position: absolute;
+            bottom: 0;
+            left: -94px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        width: 514px;
+        z-index: 1;
+    }
+
+    // Hero right
+    &__content {
+        &__heading {
+            color: #080415;
+            font-size: 8rem;
+            font-weight: 500;
+            line-height: 0.95; /* 95% */
+            letter-spacing: -0.04;
+        }
+
+        &__desc {
+            max-width: 370px;
+            margin-top: 20px;
+        }
+
+        &__actions {
+            margin-top: 50px;
+        }
+
+        &__cta {
+            @extend %btn-base;
+        }
+
+        &__link {
+            margin-left: 30px;
+            color: #080415;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration-line: underline;
+        }
+
+        &__socials {
+            margin-top: 104px;
+            display: flex;
+
+            &__row {
+                display: flex;
+                align-items: center;
+            }
+
+            &__title {
+                color: #51586a;
+                font-weight: 500;
+                margin-right: 15px;
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            &__item {
+                @include flexCenter();
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid #080415;
+            }
+        }
+    }
+
+    // Hero decor
+    &__decor {
+        position: absolute;
+        bottom: 0;
+        right: -215px;
+    }
+}
