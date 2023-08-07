@@ -1,0 +1,56 @@
+.action {
+    margin-top: 75px;
+
+    &__wrapper {
+        position: relative;
+        padding: 68px 0;
+        width: 1330px;
+        margin: 0 auto;
+        background: #fbfaff;
+    }
+
+    &__icon {
+        width: 90px;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        @extend %section-heading--center;
+        margin-top: 20px;
+    }
+
+    &__desc {
+        @extend %section-desc--center;
+        margin-top: 20px;
+        max-width: 532px;
+    }
+
+    &__cta {
+        @extend %btn-base;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 60px;
+        z-index: 1;
+    }
+
+    &__decor {
+        position: absolute;
+    }
+
+    &__decor:first-child {
+        bottom: 0;
+        left: 0;
+    }
+
+    &__decor:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__decor:last-child {
+        top: 0;
+        right: 0;
+    }
+}

@@ -191,14 +191,14 @@ a {
   text-decoration: none;
 }
 
-.question__item__desc, .work-item__desc, .work__desc, .features__item__desc, .hero__content__desc, .gallery__desc, .review__desc, .about__desc, .features__desc {
+.question__item__desc, .work-item__desc, .work__desc, .features__item__desc, .hero__content__desc, .action__desc, .gallery__desc, .review__desc, .about__desc, .features__desc {
   color: #51586a;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.67; /* 166.667% */
 }
 
-.question__heading, .work__heading, .gallery__heading, .review__heading, .about__heading, .features__heading {
+.question__heading, .work__heading, .action__heading, .gallery__heading, .review__heading, .about__heading, .features__heading {
   color: #080415;
   font-size: 5.6rem;
   font-weight: 500;
@@ -206,17 +206,17 @@ a {
   letter-spacing: -0.04em;
 }
 
-.gallery__heading, .review__heading, .about__heading, .features__heading {
+.action__heading, .gallery__heading, .review__heading, .about__heading, .features__heading {
   text-align: center;
 }
 
-.gallery__desc, .review__desc, .about__desc, .features__desc {
+.action__desc, .gallery__desc, .review__desc, .about__desc, .features__desc {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.work__view-all, .hero__content__cta {
+.action__cta, .work__view-all, .hero__content__cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -226,6 +226,11 @@ a {
   color: #fdfdfd;
   font-size: 1.8rem;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.action__cta:hover, .work__view-all:hover, .hero__content__cta:hover {
+  opacity: 0.8;
 }
 
 .work-item__heading, .features__item__heading {
@@ -1353,6 +1358,51 @@ input:checked + .question__item .question__item__title {
   width: 370px;
   height: 529px;
   object-fit: cover;
+}
+
+.action {
+  margin-top: 75px;
+}
+.action__wrapper {
+  position: relative;
+  padding: 68px 0;
+  width: 1330px;
+  margin: 0 auto;
+  background: #fbfaff;
+}
+.action__icon {
+  width: 90px;
+  margin: 0 auto;
+}
+.action__heading {
+  margin-top: 20px;
+}
+.action__desc {
+  margin-top: 20px;
+  max-width: 532px;
+}
+.action__cta {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 60px;
+  z-index: 1;
+}
+.action__decor {
+  position: absolute;
+}
+.action__decor:first-child {
+  bottom: 0;
+  left: 0;
+}
+.action__decor:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.action__decor:last-child {
+  top: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -45,6 +45,11 @@ a {
     color: #fdfdfd;
     font-size: 1.8rem;
     font-weight: 700;
+    cursor: pointer;
+}
+
+%btn-base:hover {
+    opacity: 0.8;
 }
 
 %section-heading-lv3 {
