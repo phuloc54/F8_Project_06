@@ -1,11 +1,13 @@
 .hero {
     padding-top: 32px;
     background: $background-color;
+    overflow: hidden;
     // Hero left
     &-inner {
         position: relative;
         display: flex;
         gap: 156px;
+
     }
 
     &__media {

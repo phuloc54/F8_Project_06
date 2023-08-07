@@ -13,8 +13,87 @@
             rel="stylesheet"
         />
 
+        <!-- FAVICON -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
         <!-- CSS -->
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
         <!-- HEADER -->
@@ -25,6 +104,26 @@
                     <div class="wrapper-logo">
                         <img src="./assets/icon/logo.svg" alt="Logo" class="logo" />
                         <a href="#!" class="email-contact">hi@arif.interactive</a>
+
+                        <!-- Logo and Menu Mobile -->
+                        <img
+                            src="./assets/icon/hero-mobile-logo.svg"
+                            class="hide-on-pc"
+                            alt=""
+                        />
+                        <label for="menu-checkbox">
+                            <img
+                                src="./assets/icon/menu-mobile.svg"
+                                class="hide-on-pc"
+                                alt=""
+                            />
+                        </label>
+
+                        <img
+                            src="./assets/icon/mobile-icon.svg"
+                            alt=""
+                            class="logo__mobile hide-on-pc"
+                        />
                     </div>
 
                     <!-- Icon -->
@@ -36,7 +135,7 @@
 
                     <!-- Navigation -->
                     <nav class="navigation">
-                        <ul class="nav__list">
+                        <ul class="nav__list" id="pc-nav">
                             <li class="nav__item">
                                 <a
                                     href="#!"
@@ -56,6 +155,29 @@
                         </ul>
                     </nav>
                 </div>
+            </div>
+        </header>
+
+        <!-- HEADER TABLET AND MOBILE -->
+        <header class="header-mobile hide-on-pc">
+            <input
+                type="checkbox"
+                name="menu-checkbox"
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="overlay"></label>
+            <!-- Menu drawer -->
+            <div class="menu-drawer">
+                <ul id="mobile-nav"></ul>
+                <script>
+                    const pcNav = document.querySelector("#pc-nav");
+                    const mobileNav = document.querySelector("#mobile-nav");
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                </script>
             </div>
         </header>
 
@@ -278,7 +400,7 @@
 
                     <!-- WORK LIST -->
                     <div class="work-list">
-                        <div class="row row-cols-2 work-list__wrapper">
+                        <div class="row row-cols-lg-2 row-cols-1 work-list__wrapper">
                             <!-- Item 1 -->
                             <div class="col">
                                 <article class="work-item">
@@ -642,22 +764,22 @@
 
                     <!-- GALLERY LIST -->
                     <div class="gallery-list">
-                        <div class="row">
-                            <div class="col-lg-4">
+                        <div class="row gallery__wrapper-list">
+                            <div class="col-lg-4 col-12">
                                 <img
                                     src="./assets/img/gallery-01.png"
                                     alt=""
                                     class="gallery__item__image"
                                 />
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-12">
                                 <img
                                     src="./assets/img/gallery-02.png"
                                     alt=""
                                     class="gallery__item__image"
                                 />
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-12">
                                 <img
                                     src="./assets/img/gallery-03.png"
                                     alt=""
@@ -665,6 +787,14 @@
                                 />
                             </div>
                         </div>
+                    </div>
+
+                    <div class="hide-on-pc gallery__dots">
+                        <div class="gallery__dot"></div>
+                        <div class="gallery__dot"></div>
+                        <div class="gallery__dot gallery__dot--active"></div>
+                        <div class="gallery__dot"></div>
+                        <div class="gallery__dot"></div>
                     </div>
                 </div>
             </section>

@@ -3,13 +3,13 @@
     
     &-inner {
         display: flex;
+        justify-content: space-between;
     }
 
     &__wrapper__heading {
         flex-shrink: 0;
         display: flex;
         gap: 13px;
-        margin-right: 105px;
 
         &::before {
             content: "";
@@ -34,7 +34,7 @@
     &__list {
         flex-shrink: 0;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, auto);
         column-gap: 66px;
         row-gap: 34px;
     }

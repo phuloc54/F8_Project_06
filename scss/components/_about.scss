@@ -33,6 +33,7 @@
         justify-content: center;
         gap: 156px;
         width: 946px;
+        max-width: 100%;
         margin: 70px auto 0;
         padding: 20px 0;
         border: 1.5px solid;
@@ -73,7 +74,7 @@
         margin-top: 70px;
         width: 100%;
         padding-top: 56.25%;
-        background-color: orange;
+        background-color: #000;
 
         video {
             position: absolute;
