@@ -191,14 +191,14 @@ a {
   text-decoration: none;
 }
 
-.question__item__desc, .work-item__desc, .work__desc, .features__item__desc, .hero__content__desc, .review__desc, .about__desc, .features__desc {
+.question__item__desc, .work-item__desc, .work__desc, .features__item__desc, .hero__content__desc, .gallery__desc, .review__desc, .about__desc, .features__desc {
   color: #51586a;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.67; /* 166.667% */
 }
 
-.question__heading, .work__heading, .review__heading, .about__heading, .features__heading {
+.question__heading, .work__heading, .gallery__heading, .review__heading, .about__heading, .features__heading {
   color: #080415;
   font-size: 5.6rem;
   font-weight: 500;
@@ -206,11 +206,11 @@ a {
   letter-spacing: -0.04em;
 }
 
-.review__heading, .about__heading, .features__heading {
+.gallery__heading, .review__heading, .about__heading, .features__heading {
   text-align: center;
 }
 
-.review__desc, .about__desc, .features__desc {
+.gallery__desc, .review__desc, .about__desc, .features__desc {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -1265,7 +1265,7 @@ a {
 
 .question {
   margin-top: 20px;
-  padding-top: 75px;
+  padding: 75px 0;
 }
 .question__heading {
   max-width: 575px;
@@ -1327,6 +1327,32 @@ input:checked + .question__item .question__item__desc {
 }
 input:checked + .question__item .question__item__title {
   color: #5d3bee;
+}
+
+.gallery {
+  margin-top: 10px;
+  padding: 75px 0;
+}
+.gallery__desc {
+  margin-top: 20px;
+  max-width: 528px;
+}
+.gallery__label {
+  margin-top: 30px;
+  color: #5d3bee;
+  font-size: 3.2rem;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  text-decoration-line: underline;
+  text-align: center;
+}
+.gallery-list {
+  margin-top: 70px;
+}
+.gallery__item__image {
+  width: 370px;
+  height: 529px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
