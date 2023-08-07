@@ -1,0 +1,93 @@
+.work {
+    margin-top: 140px;
+    padding: 86px 0;
+    background: $primary-color;
+
+    &__row-top {
+        display: flex;
+        align-items: center;
+    }
+
+    &__heading {
+        @extend %section-heading;
+        max-width: 468px;
+        color: #fff;
+    }
+
+    &__desc {
+        @extend %section-desc;
+        margin-left: 160px;
+        max-width: 370px;
+        color: white;
+    }
+
+    &-list {
+        margin-top: 70px;
+
+        &__wrapper {
+            row-gap: 30px;
+        }
+    }
+
+    &-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 44px;
+        padding: 24px 23px 23px 34px;
+        background: #fbfaff;
+        z-index: 1;
+
+        &__info {
+            flex-shrink: 0;
+        }
+        &__heading {
+            @extend %section-heading-lv3;
+            white-space: nowrap;
+        }
+
+        &__desc {
+            @extend %section-desc;
+            max-width: 220px;
+            margin-top: 10px;
+            font-size: 1.6rem;
+        }
+
+        &__link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #080415;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration-line: underline;
+        }
+
+        &__image {
+            position: relative;
+            flex-shrink: 0;
+            width: 246px;
+            height: 187px;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        &::after {
+            content: url(../../assets/icon/work-decor.svg);
+            position: absolute;
+            right: 0;
+            z-index: 0;
+        }
+    }
+
+    &__view-all {
+        @extend %btn-base;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 80px;
+        background-color: white;
+        color: $heading-color;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}

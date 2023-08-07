@@ -1,4 +1,4 @@
-@import "./variables";
+
 body {
     font-family: "DM Sans", sans-serif;
 }
@@ -15,7 +15,7 @@ a {
 }
 
 %section-heading {
-    color: #080415;
+    color: $heading-color;
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17; /* 117.857% */
@@ -46,4 +46,12 @@ a {
     color: #fdfdfd;
     font-size: 1.8rem;
     font-weight: 700;
+}
+
+%section-heading-lv3 {
+    color: $heading-color;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -0.04;
 }

@@ -17,7 +17,7 @@
 
     &__item {
         padding: 33px 43px;
-        background: #FBFAFF;
+        background: #fbfaff;
 
         .features__icon {
             display: flex;
@@ -31,12 +31,8 @@
         }
 
         &__heading {
+            @extend %section-heading-lv3;
             margin-top: 22px;
-            color: #080415;
-            font-size: 3.2rem;
-            font-weight: 500;
-            line-height: 1.25; /* 125% */
-            letter-spacing: -0.04;
         }
 
         &__desc {
