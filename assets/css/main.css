@@ -191,14 +191,14 @@ a {
   text-decoration: none;
 }
 
-.work-item__desc, .work__desc, .features__item__desc, .hero__content__desc, .review__desc, .about__desc, .features__desc {
+.question__item__desc, .work-item__desc, .work__desc, .features__item__desc, .hero__content__desc, .review__desc, .about__desc, .features__desc {
   color: #51586a;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.67; /* 166.667% */
 }
 
-.work__heading, .review__heading, .about__heading, .features__heading {
+.question__heading, .work__heading, .review__heading, .about__heading, .features__heading {
   color: #080415;
   font-size: 5.6rem;
   font-weight: 500;
@@ -1261,6 +1261,72 @@ a {
 .review__decor--right {
   left: inherit;
   right: 0;
+}
+
+.question {
+  margin-top: 20px;
+  padding-top: 75px;
+}
+.question__heading {
+  max-width: 575px;
+}
+.question__list {
+  margin-top: 80px;
+}
+.question__item {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  width: 1009px;
+  padding: 0 0 22px 22px;
+  border-bottom: 2px solid #080415;
+  transition: ease 0.5s;
+}
+.question__item__title {
+  color: #080415;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.25; /* 125% */
+  letter-spacing: -0.04;
+  white-space: nowrap;
+  transition: ease 0.5s;
+}
+.question__item__desc {
+  margin-top: 23px;
+  max-width: 487px;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  display: none;
+  transition: ease 0.5s;
+}
+.question__item__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #8a8989;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+.question__item__btn:hover {
+  cursor: pointer;
+}
+input:checked + .question__item {
+  border-color: transparent transparent #5d3bee;
+}
+input:checked + .question__item .question__item__desc {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  transform: scaleY(1);
+}
+input:checked + .question__item .question__item__title {
+  color: #5d3bee;
 }
 
 /*# sourceMappingURL=main.css.map */
