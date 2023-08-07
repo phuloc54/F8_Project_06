@@ -1,0 +1,103 @@
+.about {
+    margin-top: 140px;
+
+    &__wrapper__label {
+        text-align: center;
+    }
+
+    &__label {
+        display: inline-flex;
+        gap: 9px;
+        &__text {
+            color: $primary-color;
+            font-size: 3.2rem;
+            font-weight: 500;
+            line-height: 1.25; /* 125% */
+            letter-spacing: -0.04em;
+        }
+    }
+
+    &__heading {
+        @extend %section-heading--center;
+        margin-top: 10px;
+    }
+
+    &__desc {
+        @extend %section-desc--center;
+        margin-top: 15px;
+        max-width: 570px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        gap: 156px;
+        width: 946px;
+        margin: 70px auto 0;
+        padding: 20px 0;
+        border: 1.5px solid;
+        border-color: #555 transparent #555 transparent;
+
+        &__item {
+            .big-number {
+                position: relative;
+                color: $heading-color;
+                font-size: 5.6rem;
+                font-weight: 500;
+                letter-spacing: -0.04em;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 7px;
+                    left: 0;
+                    display: inline-block;
+                    width: 100%;
+                    height: 2px;
+                    background: $heading-color;
+                }
+            }
+        }
+
+        &__desc {
+            margin-top: 10px;
+            color: #51586a;
+            font-size: 1.7rem;
+            font-weight: 400;
+        }
+    }
+
+    &__wrapper-video {
+        position: relative;
+        position: relative;
+        margin-top: 70px;
+        width: 100%;
+        padding-top: 56.25%;
+        background-color: orange;
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__label-video {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        
+        @include flexCenter();
+
+        width: 170px;
+        height: 50px;
+        background: #fff;
+
+        color: #51586a;
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
