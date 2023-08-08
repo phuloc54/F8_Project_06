@@ -130,7 +130,7 @@
                     <img
                         src="./assets/icon/logo-icon.svg"
                         alt=""
-                        class="logo__icon"
+                        class="logo__icon hide-on-tablet"
                     />
 
                     <!-- Navigation -->
@@ -192,6 +192,12 @@
                                 src="./assets/img/hero-img.png"
                                 alt="An Interactive Designer"
                                 class="hero__image"
+                            />
+
+                            <img
+                                src="./assets/icon/hero-bg-image.png"
+                                alt=""
+                                class="show-on-mobile"
                             />
                         </div>
                         <!-- HERO RIGHT -->
@@ -324,7 +330,7 @@
                     <!-- FEATURES LIST -->
                     <div class="row features__list">
                         <!-- FEATURES ITEM 1-->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-12">
                             <article class="features__item">
                                 <div class="features__icon">
                                     <img
@@ -344,7 +350,7 @@
                         </div>
 
                         <!-- FEATURES ITEM 2-->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-12">
                             <article class="features__item">
                                 <div class="features__icon">
                                     <img
@@ -362,7 +368,7 @@
                         </div>
 
                         <!-- FEATURES ITEM 3 -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-12">
                             <article class="features__item">
                                 <div class="features__icon">
                                     <img
@@ -380,6 +386,13 @@
                                 </p>
                             </article>
                         </div>
+                    </div>
+                    <div class="features__list__dots">
+                        <div class="features__list__dot"></div>
+                        <div
+                            class="features__list__dot features__list__dot--active"
+                        ></div>
+                        <div class="features__list__dot"></div>
                     </div>
                 </div>
             </section>
@@ -649,6 +662,17 @@
                         alt=""
                         class="review__decor review__decor--right"
                     />
+
+                    <img
+                        src="./assets/icon/review-decor-mobile-1.svg"
+                        alt=""
+                        class="review__decor show-on-mobile"
+                    />
+                    <img
+                        src="./assets/icon/review-decor-mobile-2.svg"
+                        alt=""
+                        class="review__decor review__decor--right show-on-mobile"
+                    />
                 </div>
             </section>
 
@@ -825,11 +849,14 @@
                             alt=""
                             class="action__decor"
                         />
+
+                        <!-- nth-child(2) decor in action section -->
                         <img
                             src="./assets/icon/action-decor-02.svg"
                             alt=""
                             class="action__decor"
                         />
+
                         <img
                             src="./assets/icon/action-decor-03.svg"
                             alt=""
@@ -877,13 +904,18 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <p class="policy-mobile hide-on-pc">
+                        <span class="policy--left">Privacy Policy</span>
+                        <span class="policy--right">Terms of Conditions</span>
+                    </p>
                 </div>
 
                 <div class="footer__row-bottom">
                     <p class="copyright">
                         ©interactiveArif 2021. All rights reserved.
                     </p>
-                    <p class="policy">
+                    <p class="policy hide-on-tablet">
                         <span class="policy--left">Privacy Policy</span>
                         <span class="policy--right">Terms of Conditions</span>
                     </p>

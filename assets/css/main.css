@@ -887,7 +887,8 @@ a {
   content: url(../../assets/img/bgc-hero.svg);
   position: absolute;
   bottom: 0;
-  left: -94px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .hero__image {
   position: relative;
@@ -978,7 +979,7 @@ a {
   font-size: 4.2rem;
   font-weight: 500;
   line-height: 1.2; /* 119.048% */
-  letter-spacing: -0.04;
+  letter-spacing: -0.04em;
 }
 .client__list {
   flex-shrink: 0;
@@ -1164,7 +1165,6 @@ a {
 }
 .about__wrapper-video {
   position: relative;
-  position: relative;
   margin-top: 70px;
   width: 100%;
   padding-top: 56.25%;
@@ -1303,8 +1303,7 @@ a {
   font-size: 3.2rem;
   font-weight: 500;
   line-height: 1.25; /* 125% */
-  letter-spacing: -0.04;
-  white-space: nowrap;
+  letter-spacing: -0.04em;
   transition: ease 0.5s;
 }
 .question__item__desc {
@@ -1398,7 +1397,7 @@ input:checked + .question__item .question__item__title {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 60px;
-  z-index: 1;
+  z-index: 4;
 }
 .action__decor {
   position: absolute;
@@ -1411,6 +1410,7 @@ input:checked + .question__item .question__item__title {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 .action__decor:last-child {
   top: 0;

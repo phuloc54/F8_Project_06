@@ -8,6 +8,9 @@
     margin-right: auto;
     // padding-left: 15px;
     // padding-right: 15px;
+    // 2 padding left right nay chi can dc enable khi ta lam man hinh nho nhat (< 576px)
+    // thi container co maxwidth la 540px, vi du lam man hinh dt co width la 390 thi ta phai them padding right left vao
+    // de cho container k dinh sat vao 2 canh trai phai cua man hinh
 }
 
 .g-0 {

@@ -18,7 +18,8 @@
             content: url(../../assets/img/bgc-hero.svg);
             position: absolute;
             bottom: 0;
-            left: -94px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 
